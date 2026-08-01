@@ -1,7 +1,27 @@
 aid: reken
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/reken.png
 name: Reken
-description: 'Reken is a company surfaced as a portfolio company of homebrew and added to the API Evangelist
-  network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Reken is an AI security company building a trust layer for the Internet
+  to combat generative-AI-enabled fraud, phishing, scams, deepfakes, and automated
+  social engineering. Co-founded by Shuman Ghosemajumder (who founded Google''s Trust
+  & Safety group) and Rich Griffiths, both formerly of Shape Security, Reken centers
+  on the on-device Reken Private Core: the Reken Model Zero detection ensemble, the
+  Reken Trust Sensor for verifying human activity, and an embedded Reken API that lets
+  applications connect to the core while keeping data on-device with local AI models
+  and zero AI token cost. Protected applications form the Reken Network, a self-assembling
+  zero-trust mesh. The company is pre-launch, offering an Early Access Program; it
+  does not yet publish a public developer API, SDKs, or documentation.'
 url: https://raw.githubusercontent.com/api-evangelist/reken/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +31,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Ai
+- Security
+- Cybersecurity
+- Fraud Detection
+- Anti-Phishing
+- Deepfakes
+- Trust and Safety
+- On-Device AI
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +49,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/reken-domain-security.yml
 - type: Website
   url: https://reken.ai
+- type: SignUp
+  url: https://reken.ai/signup
+- type: TermsOfService
+  url: https://reken.ai/terms
+- type: PrivacyPolicy
+  url: https://reken.ai/privacy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/reken-ai
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
